@@ -3,7 +3,7 @@ const DBURL = ""
 
 const mongoose = require("mongoose");
 
-const MONGOURI = "mongodb+srv://db-admin:admin@cluster0.d4klr.mongodb.net/Sandbox?retryWrites=true&w=majority";
+const MONGOURI = process.env.DBURL;
 
 const InitiateMongoServer = async () => {
   try {
